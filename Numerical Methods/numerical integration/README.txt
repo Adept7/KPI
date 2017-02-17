@@ -1,0 +1,1 @@
+numerical integration by Simpson's rule

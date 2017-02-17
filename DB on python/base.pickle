@@ -1,0 +1,16 @@
+(lp0
+(ibase
+ItemFaculty
+p1
+(dp2
+S'_ItemFaculty__num'
+p3
+I50
+sS'_ItemFaculty__name'
+p4
+S'FPM'
+p5
+sS'list'
+p6
+(lp7
+sba.

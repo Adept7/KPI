@@ -1,0 +1,4 @@
+- Bresenham's line algorithm
+- Bresenham's circle algorithm
+- Xiaolin Wu's line algorithm
+- Digital differential analyzer(DDA)
