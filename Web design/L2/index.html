@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>L2</title>
+	
+	<style type="text/css">
+		a {
+			color: red;
+		}
+
+		ul {
+			list-style:none;
+			width: 30%;
+		}	
+
+		li {
+			padding-left: 20px;
+			word-wrap: break-word;
+		}
+		
+		li a {
+			text-decoration: none;
+			color: black;
+		}
+
+		iframe {
+			float: right;
+			height: 700px;
+			width: 70%;
+			margin-right: 10px;
+		}
+	</style>
+
+	<script type="text/javascript">
+	window.onload = function() {
+			var arr = ['Азбука', 'брокер', 'Воландеморт', 'Гарик']
+			var list = document.getElementById('list')
+			var iframe = document.getElementById("frame")
+			iframe.style.visibility = 'hidden'
+	
+			for (i in arr) {
+				var item = document.createElement("li");
+				item.innerHTML = arr[i];
+				list.appendChild(item);
+
+				item.onclick = function (e) {
+					var iframe = document.getElementById("frame"),
+						target = e.target || e.srcElement,
+						text = target.textContent || text.innerText;
+					iframe.style.visibility = 'visible'
+					iframe.src = "https://ru.wikipedia.org/w/index.php?search=" + text;
+				}
+
+				var letter = document.createElement('a')
+				letter.href = "https://ru.wikipedia.org/w/index.php?search=" + item.innerHTML
+				letter.innerHTML=arr[i][0].toUpperCase()
+				letter.target = 'iframe'
+				list.insertBefore(letter,item)
+
+				letter.onclick = function (e) {
+					var iframe = document.getElementById("frame"),
+						target = e.target || e.srcElement,
+						text = target.textContent || text.innerText;
+					iframe.style.visibility = 'visible'
+					iframe.src = target;
+				}
+
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+<iframe id="frame" name='iframe'>Ваш браузер не поддерживает Iframe</iframe>
+
+<ul id="list">
+	<li></li>
+</ul>
+
+</body>
+</html>
