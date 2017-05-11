@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LabWork1 Computer Systems</string>
+    <string name="startSimulationButton">Run Simulation</string>
+    <string name="firstCPUString">First CPU power value:</string>
+    <string name="secondCPUString">Second CPU power value:</string>
+    <string name="thirdCPUString">Third CPU power value:</string>
+    <string name="fourthCPUString">Fourth CPU power value:</string>
+    <string name="fifthCPUString">Fifth CPU power value:</string>
+    <string name="probabilityString">Probability: </string>
+    <string name="minBoundString">Minimal bound of task complexity: </string>
+    <string name="maxBoundString">Maximal bound of task complexity: </string>
+    <string name="implementedOperationsString">Implemented operations: </string>
+</resources>

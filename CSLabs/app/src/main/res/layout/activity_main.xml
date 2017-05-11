@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+            android:layout_alignParentBottom="false">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:weightSum="0">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/firstCPUString"
+                    android:id="@+id/firstCPUPowerText"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/firstCPUPowerEditText"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secondCPUString"
+                    android:id="@+id/secondCPUPowerText"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secondCPUPowerEditText"
+                    android:inputType="number"
+                    android:layout_alignLeft="@+id/editText" android:layout_below="@+id/editText1"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thirdCPUString"
+                    android:id="@+id/thirdCPUPowerText"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/thirdCPUPowerEditText" android:layout_alignLeft="@+id/editText" android:layout_alignParentTop="true"
+                    android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourthCPUString"
+                    android:id="@+id/fourthCPUPowerText"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/fourthCPUPowerEditText" android:layout_alignLeft="@+id/editText" android:layout_below="@+id/editText2"
+                    android:layout_gravity="right|center_vertical"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifthCPUString"
+                    android:id="@+id/fifthCPUPowerText"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/fifthCPUPowerEditText" android:layout_alignLeft="@+id/editText" android:layout_below="@+id/editText3"/>
+            <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/probabilitySeekBar"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/probabilityString"
+                        android:id="@+id/probabilityText" android:layout_gravity="center_horizontal"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/probabilityTextPercent"/>
+            </LinearLayout>
+            <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minBoundSeekBar"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_gravity="center_horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/minBoundString"
+                        android:id="@+id/minBoundText" android:layout_gravity="center_horizontal"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "0"
+                        android:id="@+id/minBoundTextPercent"/>
+            </LinearLayout>
+            <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maxBoundSeekBar"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_gravity="center_horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/maxBoundString"
+                        android:id="@+id/maxBoundText" android:layout_gravity="center_horizontal"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "0"
+                        android:id="@+id/maxBoundTextPercent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/startSimulationButton"
+                android:id="@+id/startButton"/>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical"
+                android:id="@+id/listView"/>
+    </LinearLayout>
+</RelativeLayout>
